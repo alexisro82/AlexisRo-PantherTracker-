@@ -1,8 +1,10 @@
 <?php // ptfunctions.php
+error_reporting(E_ALL ^ E_DEPRECATED);
+
 $dbhost  = 'localhost';    
 $dbname  = 'seniorproject'; 
 $dbuser  = 'root';         
-$dbpass  = 'catalina83';   
+$dbpass  = '';   
 $appname = "PANTHER-TRACKER"; 
 
 mysql_connect($dbhost, $dbuser, $dbpass) or die(mysql_error());
